@@ -1,5 +1,12 @@
 version: 2
 updates:
+
+- package-ecosystem: gomod
+  directory: "/01-Login"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+=======
   - package-ecosystem: "gomod"
     directory: "/01-Login"
     schedule:
@@ -7,3 +14,4 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major", "version-update:semver-patch"]
+
